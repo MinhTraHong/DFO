@@ -1,4 +1,4 @@
-#Prerequisites
+# Prerequisites
  - Environment:
 	+ IIS > 7
 	+ .Net Core framework 2.1
@@ -13,7 +13,7 @@
  - Bank-end:
 	+ Visual studio 2017
 
-#Back-end:
+# Back-end:
  - Open "DFO.sln" with Visual Studio 2017
  - Build DFO.sln with Release mode
  - Publish MainAPI.
@@ -26,7 +26,7 @@
 	
 	Note: The application must run on port 5000
 		
-#Front-end:
+# Front-end:
  - Directory to MainSPA folder. Clean dist & app folder for re-deploy
  - Start cmd
  ```
