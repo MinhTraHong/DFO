@@ -29,102 +29,6 @@
           "lib/netstandard1.1/Autofac.Extensions.DependencyInjection.dll": {}
         }
       },
-      "Google.Api.Gax/2.5.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Extensions.PlatformAbstractions": "1.1.0",
-          "NETStandard.Library": "1.6.1",
-          "Newtonsoft.Json": "10.0.2",
-          "System.Interactive.Async": "3.1.1"
-        },
-        "compile": {
-          "lib/netstandard1.3/Google.Api.Gax.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard1.3/Google.Api.Gax.dll": {}
-        }
-      },
-      "Google.Api.Gax.Rest/2.5.0": {
-        "type": "package",
-        "dependencies": {
-          "Google.Api.Gax": "2.5.0",
-          "Google.Apis.Auth": "1.35.1",
-          "NETStandard.Library": "1.6.1"
-        },
-        "compile": {
-          "lib/netstandard1.3/Google.Api.Gax.Rest.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard1.3/Google.Api.Gax.Rest.dll": {}
-        }
-      },
-      "Google.Apis/1.35.1": {
-        "type": "package",
-        "dependencies": {
-          "Google.Apis.Core": "1.35.1",
-          "Newtonsoft.Json": "10.0.2"
-        },
-        "compile": {
-          "lib/netstandard2.0/Google.Apis.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/Google.Apis.dll": {}
-        }
-      },
-      "Google.Apis.Auth/1.35.1": {
-        "type": "package",
-        "dependencies": {
-          "Google.Apis": "1.35.1",
-          "Google.Apis.Core": "1.35.1"
-        },
-        "compile": {
-          "lib/netstandard2.0/Google.Apis.Auth.PlatformServices.dll": {},
-          "lib/netstandard2.0/Google.Apis.Auth.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/Google.Apis.Auth.PlatformServices.dll": {},
-          "lib/netstandard2.0/Google.Apis.Auth.dll": {}
-        }
-      },
-      "Google.Apis.Core/1.35.1": {
-        "type": "package",
-        "dependencies": {
-          "Newtonsoft.Json": "10.0.2"
-        },
-        "compile": {
-          "lib/netstandard2.0/Google.Apis.Core.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/Google.Apis.Core.dll": {}
-        }
-      },
-      "Google.Apis.Storage.v1/1.35.1.1266": {
-        "type": "package",
-        "dependencies": {
-          "Google.Apis": "1.35.1",
-          "Google.Apis.Auth": "1.35.1"
-        },
-        "compile": {
-          "lib/netstandard2.0/Google.Apis.Storage.v1.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/Google.Apis.Storage.v1.dll": {}
-        }
-      },
-      "Google.Cloud.Storage.V1/2.2.0": {
-        "type": "package",
-        "dependencies": {
-          "Google.Api.Gax.Rest": "2.5.0",
-          "Google.Apis.Storage.v1": "1.35.1.1266",
-          "NETStandard.Library": "1.6.1"
-        },
-        "compile": {
-          "lib/netstandard1.3/Google.Cloud.Storage.V1.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard1.3/Google.Cloud.Storage.V1.dll": {}
-        }
-      },
       "Libuv/1.10.0": {
         "type": "package",
         "dependencies": {
@@ -5958,135 +5862,6 @@
         "autofac.extensions.dependencyinjection.nuspec",
         "lib/netstandard1.1/Autofac.Extensions.DependencyInjection.dll",
         "lib/netstandard1.1/Autofac.Extensions.DependencyInjection.xml"
-      ]
-    },
-    "Google.Api.Gax/2.5.0": {
-      "sha512": "a4m7UtIGRkFCJ6Uw8XxviIFvZfCqbwLauGOrbRuf1WxmLtcTr+GeG2gpQhnkyEKjqnUiqQCHhCDDGFDgEqsJlw==",
-      "type": "package",
-      "path": "google.api.gax/2.5.0",
-      "files": [
-        "google.api.gax.2.5.0.nupkg.sha512",
-        "google.api.gax.nuspec",
-        "lib/net45/Google.Api.Gax.dll",
-        "lib/net45/Google.Api.Gax.pdb",
-        "lib/net45/Google.Api.Gax.xml",
-        "lib/netstandard1.3/Google.Api.Gax.dll",
-        "lib/netstandard1.3/Google.Api.Gax.pdb",
-        "lib/netstandard1.3/Google.Api.Gax.xml"
-      ]
-    },
-    "Google.Api.Gax.Rest/2.5.0": {
-      "sha512": "toJF5qhEhtU1dFg/FXXQKEHsZ/Q8gDfvutlUWk0H71UAMVH+rygumpAUbSVsIMY2P2i2+l2hVKciJoIqZHEK2Q==",
-      "type": "package",
-      "path": "google.api.gax.rest/2.5.0",
-      "files": [
-        "google.api.gax.rest.2.5.0.nupkg.sha512",
-        "google.api.gax.rest.nuspec",
-        "lib/net45/Google.Api.Gax.Rest.dll",
-        "lib/net45/Google.Api.Gax.Rest.pdb",
-        "lib/net45/Google.Api.Gax.Rest.xml",
-        "lib/netstandard1.3/Google.Api.Gax.Rest.dll",
-        "lib/netstandard1.3/Google.Api.Gax.Rest.pdb",
-        "lib/netstandard1.3/Google.Api.Gax.Rest.xml"
-      ]
-    },
-    "Google.Apis/1.35.1": {
-      "sha512": "ZBWKDuj7qznEaNYHFRYcwbDfdDltqfeUrpVL8ijahy7KGG8DdHBY86uA2bpiKTAmgbOO7TKNkvaURAVJur98eQ==",
-      "type": "package",
-      "path": "google.apis/1.35.1",
-      "files": [
-        "google.apis.1.35.1.nupkg.sha512",
-        "google.apis.nuspec",
-        "lib/net45/Google.Apis.PlatformServices.dll",
-        "lib/net45/Google.Apis.dll",
-        "lib/net45/Google.Apis.pdb",
-        "lib/net45/Google.Apis.xml",
-        "lib/netstandard1.3/Google.Apis.dll",
-        "lib/netstandard1.3/Google.Apis.pdb",
-        "lib/netstandard1.3/Google.Apis.xml",
-        "lib/netstandard2.0/Google.Apis.dll",
-        "lib/netstandard2.0/Google.Apis.pdb",
-        "lib/netstandard2.0/Google.Apis.xml"
-      ]
-    },
-    "Google.Apis.Auth/1.35.1": {
-      "sha512": "GklaB+R3yiC13T/duEW10uqvugSr1zgPcn1P3O4hOPcMoS4Z/NvGYns2IoEywVKXuFg4kGH/VUCZ7xSUdcAV6g==",
-      "type": "package",
-      "path": "google.apis.auth/1.35.1",
-      "files": [
-        "google.apis.auth.1.35.1.nupkg.sha512",
-        "google.apis.auth.nuspec",
-        "lib/net45/Google.Apis.Auth.PlatformServices.dll",
-        "lib/net45/Google.Apis.Auth.dll",
-        "lib/net45/Google.Apis.Auth.pdb",
-        "lib/net45/Google.Apis.Auth.xml",
-        "lib/netstandard1.3/Google.Apis.Auth.PlatformServices.dll",
-        "lib/netstandard1.3/Google.Apis.Auth.dll",
-        "lib/netstandard1.3/Google.Apis.Auth.pdb",
-        "lib/netstandard1.3/Google.Apis.Auth.xml",
-        "lib/netstandard2.0/Google.Apis.Auth.PlatformServices.dll",
-        "lib/netstandard2.0/Google.Apis.Auth.dll",
-        "lib/netstandard2.0/Google.Apis.Auth.pdb",
-        "lib/netstandard2.0/Google.Apis.Auth.xml"
-      ]
-    },
-    "Google.Apis.Core/1.35.1": {
-      "sha512": "xVzrkplgHMOCqFQHIfy9HvJBKNLQaRV+orWFHjpUAtGZe0GghHdQKG5dzLNnYjLQXICBftlK5FWk9AoAotYbYw==",
-      "type": "package",
-      "path": "google.apis.core/1.35.1",
-      "files": [
-        "google.apis.core.1.35.1.nupkg.sha512",
-        "google.apis.core.nuspec",
-        "lib/net45/Google.Apis.Core.dll",
-        "lib/net45/Google.Apis.Core.pdb",
-        "lib/net45/Google.Apis.Core.xml",
-        "lib/netstandard1.3/Google.Apis.Core.dll",
-        "lib/netstandard1.3/Google.Apis.Core.pdb",
-        "lib/netstandard1.3/Google.Apis.Core.xml",
-        "lib/netstandard2.0/Google.Apis.Core.dll",
-        "lib/netstandard2.0/Google.Apis.Core.pdb",
-        "lib/netstandard2.0/Google.Apis.Core.xml"
-      ]
-    },
-    "Google.Apis.Storage.v1/1.35.1.1266": {
-      "sha512": "5yVSpcDuS2swyrK518EyEddQow2c36x2sSRYY5JhMLknEVeeTH5E7b5x6zaUQlYjf8O/ovDQO7qLUCJzj34V9w==",
-      "type": "package",
-      "path": "google.apis.storage.v1/1.35.1.1266",
-      "files": [
-        ".signature.p7s",
-        "google.apis.storage.v1.1.35.1.1266.nupkg.sha512",
-        "google.apis.storage.v1.nuspec",
-        "lib/net40/Google.Apis.Storage.v1.dll",
-        "lib/net40/Google.Apis.Storage.v1.pdb",
-        "lib/net40/Google.Apis.Storage.v1.xml",
-        "lib/net45/Google.Apis.Storage.v1.dll",
-        "lib/net45/Google.Apis.Storage.v1.pdb",
-        "lib/net45/Google.Apis.Storage.v1.xml",
-        "lib/netstandard1.0/Google.Apis.Storage.v1.dll",
-        "lib/netstandard1.0/Google.Apis.Storage.v1.pdb",
-        "lib/netstandard1.0/Google.Apis.Storage.v1.xml",
-        "lib/netstandard1.3/Google.Apis.Storage.v1.dll",
-        "lib/netstandard1.3/Google.Apis.Storage.v1.pdb",
-        "lib/netstandard1.3/Google.Apis.Storage.v1.xml",
-        "lib/netstandard2.0/Google.Apis.Storage.v1.dll",
-        "lib/netstandard2.0/Google.Apis.Storage.v1.pdb",
-        "lib/netstandard2.0/Google.Apis.Storage.v1.xml"
-      ]
-    },
-    "Google.Cloud.Storage.V1/2.2.0": {
-      "sha512": "c4pWnndwCdOfrodNX0g8DOyPQDYBVZB1cJElfbJwZpxaVqvV6dyTwpipT+B8J+XJNZDv040M90k+zUtAImwcyw==",
-      "type": "package",
-      "path": "google.cloud.storage.v1/2.2.0",
-      "files": [
-        ".signature.p7s",
-        "google.cloud.storage.v1.2.2.0.nupkg.sha512",
-        "google.cloud.storage.v1.nuspec",
-        "lib/net45/Google.Cloud.Storage.V1.dll",
-        "lib/net45/Google.Cloud.Storage.V1.pdb",
-        "lib/net45/Google.Cloud.Storage.V1.xml",
-        "lib/netstandard1.3/Google.Cloud.Storage.V1.dll",
-        "lib/netstandard1.3/Google.Cloud.Storage.V1.pdb",
-        "lib/netstandard1.3/Google.Cloud.Storage.V1.xml"
       ]
     },
     "Libuv/1.10.0": {
@@ -15120,7 +14895,6 @@
     ".NETCoreApp,Version=v2.1": [
       "Autofac >= 4.8.1",
       "Autofac.Extensions.DependencyInjection >= 4.2.2",
-      "Google.Cloud.Storage.V1 >= 2.2.0",
       "Microsoft.ApplicationInsights.AspNetCore >= 2.3.0",
       "Microsoft.AspNetCore.All >= 2.1.0",
       "Microsoft.AspNetCore.Authorization >= 2.1.0",
@@ -15142,11 +14916,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\DFO\\Source\\Projects\\MainAPI\\MainAPI.csproj",
+      "projectUniqueName": "D:\\DFO-Project\\DFO\\Source\\Projects\\MainAPI\\MainAPI.csproj",
       "projectName": "MainAPI",
-      "projectPath": "D:\\DFO\\Source\\Projects\\MainAPI\\MainAPI.csproj",
+      "projectPath": "D:\\DFO-Project\\DFO\\Source\\Projects\\MainAPI\\MainAPI.csproj",
       "packagesPath": "C:\\Users\\minhtrah\\.nuget\\packages\\",
-      "outputPath": "D:\\DFO\\Source\\Projects\\MainAPI\\obj\\",
+      "outputPath": "D:\\DFO-Project\\DFO\\Source\\Projects\\MainAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -15185,10 +14959,6 @@
           "Autofac.Extensions.DependencyInjection": {
             "target": "Package",
             "version": "[4.2.2, )"
-          },
-          "Google.Cloud.Storage.V1": {
-            "target": "Package",
-            "version": "[2.2.0, )"
           },
           "Microsoft.ApplicationInsights.AspNetCore": {
             "target": "Package",

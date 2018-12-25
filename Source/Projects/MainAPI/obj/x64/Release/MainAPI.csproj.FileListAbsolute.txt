@@ -1,0 +1,16 @@
+D:\DFO-Project\DFO\Source\Output\Release\appsettings.Development.json
+D:\DFO-Project\DFO\Source\Output\Release\appsettings.json
+D:\DFO-Project\DFO\Source\Output\Release\MainAPI.deps.json
+D:\DFO-Project\DFO\Source\Output\Release\MainAPI.runtimeconfig.json
+D:\DFO-Project\DFO\Source\Output\Release\MainAPI.runtimeconfig.dev.json
+D:\DFO-Project\DFO\Source\Output\Release\MainAPI.dll
+D:\DFO-Project\DFO\Source\Output\Release\MainAPI.pdb
+D:\DFO-Project\DFO\Source\Projects\MainAPI\obj\x64\Release\MainAPI.csprojAssemblyReference.cache
+D:\DFO-Project\DFO\Source\Projects\MainAPI\obj\x64\Release\MainAPI.csproj.CoreCompileInputs.cache
+D:\DFO-Project\DFO\Source\Projects\MainAPI\obj\x64\Release\MainAPI.RazorAssemblyInfo.cache
+D:\DFO-Project\DFO\Source\Projects\MainAPI\obj\x64\Release\MainAPI.RazorAssemblyInfo.cs
+D:\DFO-Project\DFO\Source\Projects\MainAPI\obj\x64\Release\MainAPI.AssemblyInfoInputs.cache
+D:\DFO-Project\DFO\Source\Projects\MainAPI\obj\x64\Release\MainAPI.AssemblyInfo.cs
+D:\DFO-Project\DFO\Source\Projects\MainAPI\obj\x64\Release\MainAPI.RazorTargetAssemblyInfo.cache
+D:\DFO-Project\DFO\Source\Projects\MainAPI\obj\x64\Release\MainAPI.dll
+D:\DFO-Project\DFO\Source\Projects\MainAPI\obj\x64\Release\MainAPI.pdb
