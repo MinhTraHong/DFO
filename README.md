@@ -24,7 +24,7 @@
 	+ Run **MainAPI.exe**
 	+ Allow firewall network for MainAPI
 	
-	**Note: The application must run on port 5000**
+	**_Note_: The application must run on port 5000**
 		
 # Front-end:
  - Directory to MainSPA folder. Clean dist & app folder for re-deploy
@@ -34,7 +34,7 @@
    npm run build-prod
    gulp production
  ```
-  => Deployment folder: {Project_dir}/MainSPA/app
+  => Deployment folder: **{Project_dir}/MainSPA/app**
  - IIS configuration:
  + In "Application Pools" create DFOAppPool
  	- .NET CLR: v4.0
