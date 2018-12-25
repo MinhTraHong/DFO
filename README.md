@@ -14,17 +14,17 @@
 	+ Visual studio 2017
 
 # Back-end:
- - Open "DFO.sln" with Visual Studio 2017
- - Build DFO.sln with Release mode
+ - Open **DFO.sln** with Visual Studio 2017
+ - Build **DFO.sln** with Release mode
  - Publish MainAPI.
 	+ Select MainAPI project (right click on project name)
 	+ Select "publish" menu item
 	+ Press "Publish" button
 	+ Check package in {Project_dir}/Output/Release/publish/MainAPI
-	+ Run "MainAPI.exe"
+	+ Run **MainAPI.exe**
 	+ Allow firewall network for MainAPI
 	
-	Note: The application must run on port 5000
+	**Note: The application must run on port 5000**
 		
 # Front-end:
  - Directory to MainSPA folder. Clean dist & app folder for re-deploy
