@@ -1,9 +1,10 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
-import { Subject, takeUntil, of, filter } from 'rxjs';
+import { Subject, takeUntil, of } from 'rxjs';
 import { SiteCodeService } from './site-code.service';
 
 export class SectionComponent implements OnInit, OnDestroy {
   private destroy$ = new Subject<void>();
+  private isLoadingSections = false;
 
   constructor(
     private siteCodeService: SiteCodeService,
@@ -12,26 +13,36 @@ export class SectionComponent implements OnInit, OnDestroy {
   ) {}
 
   ngOnInit(): void {
-    // Subscribe to site code changes - only when site code is not null
-    this.siteCodeService.siteCode$
-      .pipe(
-        filter(siteCode => siteCode !== null), // Only proceed if site code exists
-        takeUntil(this.destroy$)
-      )
-      .subscribe((siteCode) => {
+    // Subscribe to site code changes
+    this.siteCodeService.siteCodeChanged$
+      .pipe(takeUntil(this.destroy$))
+      .subscribe(() => {
         this.loadSections();
       });
   }
 
   private loadSections(): void {
+    // Prevent multiple simultaneous calls
+    if (this.isLoadingSections) {
+      return;
+    }
+    
+    this.isLoadingSections = true;
     const { page } = this.route.snapshot.data;
     
     this.crcApiService.sections$(
       page.pageType,
       this.route.snapshot.paramMap.get('productId') ?? undefined,
       true
-    ).subscribe(sections => {
-      this.sections$ = of(sections);
+    ).subscribe({
+      next: (sections) => {
+        this.sections$ = of(sections);
+        this.isLoadingSections = false;
+      },
+      error: (error) => {
+        console.error('Error loading sections:', error);
+        this.isLoadingSections = false;
+      }
     });
   }
 

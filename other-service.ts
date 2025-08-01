@@ -16,8 +16,8 @@ export class YourOtherService {
     const put$ = this.http.put<CRCAuthorizationResult>(`${this.config?.url}/Location/${siteCode}`, null)
       .pipe(
         tap(() => {
-          // Update the site code (will only emit if it's different)
-          this.siteCodeService.updateSiteCode(siteCode);
+          // Notify about site code change (only emits if different)
+          this.siteCodeService.notifySiteCodeChanged(siteCode);
         })
       );
     
