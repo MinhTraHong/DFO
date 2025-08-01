@@ -1,4 +1,4 @@
-﻿using Autofac;
+using Autofac;
 using Autofac.Extensions.DependencyInjection;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -9,6 +9,8 @@ using System;
 using DFO.MainAPI.Infrastructure.Filters;
 using Microsoft.AspNetCore.Http;
 using DFO.MainAPI.Extensions;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
 
 namespace DFO.MainAPI
 {
@@ -28,6 +30,33 @@ namespace DFO.MainAPI
             RegisterAppInsights(services);
 
             services.AddMemoryCache();
+
+            // Add JWT Bearer authentication with clock skew tolerance
+            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+                .AddJwtBearer(options =>
+                {
+                    // Auth0 domain (should be something like https://your-domain.auth0.com/)
+                    var domain = Configuration["Auth0:Domain"];
+                    
+                    options.Authority = domain;
+                    options.Audience = Configuration["Auth0:Audience"];
+                    
+                    // Configure JWT validation parameters
+                    options.TokenValidationParameters = new TokenValidationParameters
+                    {
+                        ValidateIssuer = true,
+                        ValidateAudience = true,
+                        ValidateLifetime = true,
+                        ValidateIssuerSigningKey = true,
+                        
+                        // Set clock skew tolerance to 5 minutes to handle time synchronization issues
+                        // This is the key setting to fix the Auth0 clock skew error
+                        ClockSkew = TimeSpan.FromMinutes(5),
+                        
+                        ValidIssuer = domain,
+                        ValidAudience = Configuration["Auth0:Audience"]
+                    };
+                });
 
             services.AddMvc(options =>
             {
@@ -89,6 +118,10 @@ namespace DFO.MainAPI
 #pragma warning restore CS1998 // Async method lacks 'await' operators and will run synchronously
 
             app.UseCors("CorsPolicy");
+
+            // Add authentication middleware
+            app.UseAuthentication();
+            app.UseAuthorization();
 
             app.UseMvcWithDefaultRoute();
 
